@@ -1,55 +1,54 @@
-import { createContext, useCallback, useContext, useMemo, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { api, guardarToken, leerToken } from "../api.js";
 
-// Sesión simulada en el navegador. Cuando exista la API (server/), login() y
-// logout() pasan a llamar a /api/auth y el rol viene del servidor.
 const AuthContext = createContext(null);
-const CLAVE = "ifts2-sesion";
 
-const PERFILES = {
-  admin: { rol: "admin", nombre: "Matías Peláez", iniciales: "MP", saludo: "Matías" },
-  bedelia: { rol: "bedelia", nombre: "Bedelía", iniciales: "BD", saludo: "Bedelía" },
-};
+const SIN_USUARIO = { nombre: "", iniciales: "", saludo: "" };
 
-function leer() {
-  try {
-    const rol = sessionStorage.getItem(CLAVE);
-    return PERFILES[rol] || null;
-  } catch {
-    return null;
-  }
+// Datos para mostrar en el panel a partir del usuario que devuelve la API.
+function conDatosDePantalla(u) {
+  const palabras = u.nombre.trim().split(/\s+/);
+  const iniciales = palabras.length > 1 ? palabras[0][0] + palabras[1][0] : palabras[0].slice(0, 2);
+  return { ...u, iniciales: iniciales.toUpperCase(), saludo: palabras[0] };
 }
 
 export function AuthProvider({ children }) {
-  const [usuario, setUsuario] = useState(leer);
+  const [usuario, setUsuario] = useState(null);
+  const [cargando, setCargando] = useState(() => !!leerToken());
 
-  const login = useCallback((mail) => {
-    const perfil = /^bedel/i.test(mail) ? PERFILES.bedelia : PERFILES.admin;
-    try {
-      sessionStorage.setItem(CLAVE, perfil.rol);
-    } catch {
-      /* sin almacenamiento: la sesión dura lo que dure la pestaña abierta */
-    }
-    setUsuario(perfil);
+  // Si hay un token guardado, se verifica con el servidor al abrir la página.
+  useEffect(() => {
+    if (!leerToken()) return;
+    api("/auth/yo")
+      .then(({ usuario: u }) => setUsuario(conDatosDePantalla(u)))
+      .catch(() => guardarToken(null))
+      .finally(() => setCargando(false));
+  }, []);
+
+  const login = useCallback(async (mail, password) => {
+    const { token, usuario: u } = await api("/auth/login", {
+      metodo: "POST",
+      cuerpo: { mail, password },
+    });
+    guardarToken(token);
+    setUsuario(conDatosDePantalla(u));
   }, []);
 
   const logout = useCallback(() => {
-    try {
-      sessionStorage.removeItem(CLAVE);
-    } catch {
-      /* nada que limpiar */
-    }
+    guardarToken(null);
     setUsuario(null);
   }, []);
 
   const valor = useMemo(
     () => ({
-      usuario: usuario || PERFILES.admin,
+      usuario: usuario || SIN_USUARIO,
       autenticado: !!usuario,
       esAdmin: !!usuario && usuario.rol === "admin",
+      cargando,
       login,
       logout,
     }),
-    [usuario, login, logout],
+    [usuario, cargando, login, logout],
   );
 
   return <AuthContext.Provider value={valor}>{children}</AuthContext.Provider>;

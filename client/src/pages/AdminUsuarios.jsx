@@ -1,40 +1,56 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { api } from "../api.js";
 import { useAuth } from "../context/AuthContext.jsx";
 import AdminLateral from "../components/AdminLateral.jsx";
 
 export default function AdminUsuarios() {
   const { usuario } = useAuth();
 
-  const [usuarios, setUsuarios] = useState([
-    { nombre: "Matías Peláez", mail: "matias.pelaez@ifts2.edu.ar", rol: "Administrador" },
-  ]);
+  const [usuarios, setUsuarios] = useState([]);
   const [error, setError] = useState("");
   const [okUsuario, setOkUsuario] = useState(false);
 
-  const agregar = (e) => {
+  const cargar = () =>
+    api("/usuarios")
+      .then((d) => setUsuarios(d.usuarios))
+      .catch((e) => setError(e.message));
+
+  useEffect(() => {
+    cargar();
+  }, []);
+
+  const agregar = async (e) => {
     e.preventDefault();
     setOkUsuario(false);
     const f = e.currentTarget;
-    const nombre = f.elements["u-nombre"].value.trim();
-    const mail = f.elements["u-mail"].value.trim();
-    const rol = f.elements["u-rol"].value;
-    const pass = f.elements["u-pass"].value;
-    let msj = "";
-    if (!nombre || !mail) msj = "Completá el nombre y el correo.";
-    else if (usuarios.some((u) => u.mail.toLowerCase() === mail.toLowerCase()))
-      msj = "Ya hay un usuario con ese correo.";
-    else if (pass.length < 8 || !/[A-Za-z]/.test(pass) || !/[0-9]/.test(pass))
-      msj = "La contraseña debe tener al menos 8 caracteres, con letras y números.";
-    setError(msj);
-    if (msj) return;
-    setUsuarios([...usuarios, { nombre, mail, rol }]);
-    f.reset();
-    setOkUsuario(true);
+    try {
+      await api("/usuarios", {
+        metodo: "POST",
+        cuerpo: {
+          nombre: f.elements["u-nombre"].value,
+          mail: f.elements["u-mail"].value,
+          rol: f.elements["u-rol"].value,
+          password: f.elements["u-pass"].value,
+        },
+      });
+      setError("");
+      f.reset();
+      setOkUsuario(true);
+      cargar();
+    } catch (err) {
+      setError(err.message);
+    }
   };
 
-  const quitar = (u) => {
-    if (window.confirm("¿Eliminar a " + u.nombre + "?"))
-      setUsuarios(usuarios.filter((x) => x !== u));
+  const quitar = async (u) => {
+    if (!window.confirm("¿Eliminar a " + u.nombre + "?")) return;
+    try {
+      await api("/usuarios/" + u.id, { metodo: "DELETE" });
+      setError("");
+      cargar();
+    } catch (err) {
+      setError(err.message);
+    }
   };
 
   return (
@@ -90,8 +106,8 @@ export default function AdminUsuarios() {
               <div className="campo">
                 <label htmlFor="u-rol">Rol</label>
                 <select id="u-rol">
-                  <option value="Administrador">Administrador</option>
-                  <option value="Bedelía">Bedelía</option>
+                  <option value="admin">Administrador</option>
+                  <option value="bedelia">Bedelía</option>
                 </select>
               </div>
               <div className="campo">
@@ -129,18 +145,14 @@ export default function AdminUsuarios() {
             </thead>
             <tbody id="tabla-usuarios">
               {usuarios.map((u) => (
-                <tr key={u.mail}>
+                <tr key={u.id}>
                   <td>
                     <strong>{u.nombre}</strong>
                   </td>
                   <td>{u.mail}</td>
                   <td>
-                    <span
-                      className={
-                        "etiqueta " + (u.rol === "Administrador" ? "et-verde" : "et-naranja")
-                      }
-                    >
-                      {u.rol}
+                    <span className={"etiqueta " + (u.rol === "admin" ? "et-verde" : "et-naranja")}>
+                      {u.rol === "admin" ? "Administrador" : "Bedelía"}
                     </span>
                   </td>
                   <td>
@@ -160,8 +172,8 @@ export default function AdminUsuarios() {
           </table>
         </div>
         <p style={{ color: "var(--suave)", fontSize: "14px", marginTop: "12px" }}>
-          Los datos de las cuentas (tres con acceso total y dos de Bedelía) los completa el
-          instituto; esta lista es de ejemplo.
+          Las cuentas (tres con acceso total y dos de Bedelía) las informa el instituto. Quien
+          administra las da de alta desde acá.
         </p>
       </main>
     </div>

@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { IMGS } from "../imagenes";
 import { useAuth } from "../context/AuthContext.jsx";
@@ -7,38 +7,21 @@ export default function Login() {
   const { login } = useAuth();
   const navigate = useNavigate();
   const [error, setError] = useState("");
-  const intentos = useRef(0);
-  const bloqueadoHasta = useRef(0);
-  const INTENTOS_MAX = 5;
+  const [enviando, setEnviando] = useState(false);
 
-  const enviar = (e) => {
+  const enviar = async (e) => {
     e.preventDefault();
-    const ahora = Date.now();
-    if (ahora < bloqueadoHasta.current) {
-      setError("Demasiados intentos fallidos. Probá de nuevo en 15 minutos.");
-      return;
+    const f = e.currentTarget;
+    setEnviando(true);
+    try {
+      await login(f.elements["l-mail"].value.trim(), f.elements["l-pass"].value);
+      setError("");
+      navigate("/admin");
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setEnviando(false);
     }
-    const mail = e.currentTarget.elements["l-mail"].value.trim();
-    const pass = e.currentTarget.elements["l-pass"].value;
-    if (!mail || pass.length < 8) {
-      intentos.current += 1;
-      if (intentos.current >= INTENTOS_MAX) {
-        bloqueadoHasta.current = ahora + 15 * 60 * 1000;
-        intentos.current = 0;
-        setError("Demasiados intentos fallidos. Probá de nuevo en 15 minutos.");
-      } else {
-        const quedan = INTENTOS_MAX - intentos.current;
-        setError(
-          "Usuario o contraseña incorrectos. Te " +
-            (quedan === 1 ? "queda 1 intento." : "quedan " + quedan + " intentos."),
-        );
-      }
-      return;
-    }
-    intentos.current = 0;
-    setError("");
-    login(mail);
-    navigate("/admin");
   };
 
   return (
@@ -76,26 +59,21 @@ export default function Login() {
           <p className="sub">Ingresá con el usuario que te asignó el instituto.</p>
           <div className="campo">
             <label htmlFor="l-mail">Correo electrónico</label>
-            <input
-              id="l-mail"
-              type="email"
-              autoComplete="username"
-              defaultValue="matias.pelaez@ifts2.edu.ar"
-            />
+            <input id="l-mail" type="email" autoComplete="username" />
           </div>
           <div className="campo">
             <label htmlFor="l-pass">Contraseña</label>
-            <input
-              id="l-pass"
-              type="password"
-              autoComplete="current-password"
-              defaultValue="contraseña"
-            />
+            <input id="l-pass" type="password" autoComplete="current-password" />
           </div>
           <p className={"aviso" + (error ? " visible error" : "")} id="error-login" role="alert">
             {error}
           </p>
-          <button className="boton boton-verde" type="submit" style={{ width: "100%" }}>
+          <button
+            className="boton boton-verde"
+            type="submit"
+            disabled={enviando}
+            style={{ width: "100%" }}
+          >
             Ingresar
           </button>
         </form>
