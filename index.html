@@ -1,0 +1,2679 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Prototipo · IFTS N.° 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="encabezado" id="encabezado">
+        <div class="contenedor">
+            <a class="marca" href="#/inicio"><img data-img="LOGO" src="img/img-636b5bfe.gif"
+                    alt="Logo del IFTS N.° 2" /><span><strong>IFTS N.° 2</strong><small>D.E. 20, Villa
+                        Lugano</small></span></a>
+            <nav aria-label="Principal">
+                <button class="boton-menu" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"
+                    id="boton-menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                    </svg>
+                </button>
+                <ul class="menu" id="menu">
+                    <li><a href="#/inicio" data-ruta="inicio">Inicio</a></li>
+                    <li><a href="#/carrera" data-ruta="carrera">La carrera</a></li>
+                    <li><a href="#/ingreso" data-ruta="ingreso">Ingreso</a></li>
+                    <li><a href="#/alumnos" data-ruta="alumnos">Alumnos</a></li>
+                    <li><a href="#/eventos" data-ruta="eventos">Eventos</a></li>
+                    <li class="destacado"><a href="#/contacto" data-ruta="contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="pagina" data-pagina="inicio">
+            <section class="portada" aria-labelledby="t-portada">
+                <div class="contenedor">
+                    <p class="pastilla">Tecnicatura Superior en Emprendimientos Gastronómicos</p>
+                    <h1 id="t-portada">
+                        <span class="antes">No formamos solo cocineros.</span><span class="lema">Formamos
+                            microempresarios gastronómicos</span>
+                    </h1>
+                    <span class="raya" aria-hidden="true"></span>
+                    <p class="bajada">
+                        Aprendé a cocinar y a gestionar tu propio emprendimiento en una carrera pública y
+                        gratuita.
+                    </p>
+                    <div class="acciones">
+                        <a class="boton boton-naranja" href="#/carrera">Conocé la carrera</a><a
+                            class="boton boton-claro" href="#/plan">Ver plan de estudios</a>
+                    </div>
+                    <ul class="chips">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M12 7v5l3 2" />
+                            </svg>3 años
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>Gratuita
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="8" r="5" />
+                                <path d="M8.5 12.5L7 22l5-3 5 3-1.5-9.5" />
+                            </svg>Título oficial nacional
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+                            </svg>Lunes a viernes, 18 a 22 h
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="busqueda" aria-labelledby="t-buscar">
+                <div class="contenedor">
+                    <h2 id="t-buscar">¿Qué estás buscando?</h2>
+                    <div class="perfiles">
+                        <div class="perfil">
+                            <div class="perfil-cab">
+                                <span class="icono ic-naranja"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.9" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M12 3l1.9 5.8H20l-4.9 3.6 1.9 5.8L12 14.6l-5 3.6 1.9-5.8L4 8.8h6.1z" />
+                                    </svg></span>
+                                <div>
+                                    <h3>Quiero estudiar</h3>
+                                    <p>Para quienes piensan inscribirse</p>
+                                </div>
+                            </div>
+                            <ul class="enlaces">
+                                <li>
+                                    <a href="#/carrera"><span><strong>La carrera</strong><span>Qué vas a aprender y
+                                                perfil del egresado</span></span><span class="flecha"><svg
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg></span></a>
+                                </li>
+                                <li>
+                                    <a href="#/plan"><span><strong>Plan de estudios</strong><span>Materias y
+                                                correlatividades</span></span><span class="flecha"><svg
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg></span></a>
+                                </li>
+                                <li>
+                                    <a href="#/ingreso"><span><strong>Cómo inscribirte</strong><span>Requisitos y
+                                                preinscripción</span></span><span class="flecha"><svg
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg></span></a>
+                                </li>
+                            </ul>
+                            <p class="nota-perfil">
+                                Requisito de ingreso: secundario completo. La carrera es gratuita y el título
+                                tiene validez nacional.
+                            </p>
+                        </div>
+                        <div class="perfil">
+                            <div class="perfil-cab">
+                                <span class="icono ic-verde"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="M22 10L12 5 2 10l10 5 10-5z" />
+                                        <path d="M6 12v5c3 2 9 2 12 0v-5" />
+                                    </svg></span>
+                                <div>
+                                    <h3>Ya soy alumno</h3>
+                                    <p>Información del cuatrimestre y plataformas</p>
+                                </div>
+                            </div>
+                            <ul class="enlaces dos-col">
+                                <li>
+                                    <a href="#/alumnos"><span><strong>Horarios de cursada</strong><span>2.° cuatrimestre
+                                                2026</span></span><span class="flecha"><svg viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg></span></a>
+                                </li>
+                                <li>
+                                    <a href="#/alumnos"><span><strong>Mesas de examen</strong><span>Fechas del turno
+                                                vigente</span></span><span class="flecha"><svg viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg></span></a>
+                                </li>
+                                <li>
+                                    <a href="#/alumnos"><span><strong>SIU Guaraní</strong><span>Inscripción a materias y
+                                                exámenes</span><span class="externo">Sitio externo</span></span><span
+                                            class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M7 17L17 7M9 7h8v8" />
+                                            </svg></span></a>
+                                </li>
+                                <li>
+                                    <a href="#/alumnos"><span><strong>Aulas virtuales</strong><span>Campus
+                                                Moodle</span><span class="externo">Sitio externo</span></span><span
+                                            class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M7 17L17 7M9 7h8v8" />
+                                            </svg></span></a>
+                                </li>
+                                <li>
+                                    <a href="#/alumnos"><span><strong>Mi Argentina</strong><span>Título digital para
+                                                egresados</span><span class="externo">Sitio externo</span></span><span
+                                            class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M7 17L17 7M9 7h8v8" />
+                                            </svg></span></a>
+                                </li>
+                                <li>
+                                    <a href="#/contacto"><span><strong>Consultas a Bedelía</strong><span>Formulario de
+                                                contacto</span></span><span class="flecha"><svg viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="seccion" aria-labelledby="t-ident">
+                <div class="contenedor">
+                    <div class="cabecera">
+                        <h2 id="t-ident">La cocina es el punto de partida. El negocio, el destino.</h2>
+                        <span class="raya" aria-hidden="true"></span>
+                        <p>
+                            En tres años combinás talleres de producción con materias de gestión, para diseñar y
+                            llevar adelante tu propio emprendimiento gastronómico.
+                        </p>
+                    </div>
+                    <div class="ecuacion">
+                        <div class="bloque cocina">
+                            <h3>En la cocina</h3>
+                            <p class="sub">Talleres de producción gastronómica</p>
+                            <ul>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>Carnes, vegetales, cereales y huevos
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>Panadería, pastelería y repostería
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>Buffet, catering y bebidas
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>Cocina nacional e internacional
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="signo" aria-hidden="true">+</div>
+                        <div class="bloque negocio">
+                            <h3>En el negocio</h3>
+                            <p class="sub">Gestión y administración gastronómica</p>
+                            <ul>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>Microempresa y contabilidad
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>Comercialización, compras y stock
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>Organización de eventos
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>Conducción de equipos de trabajo
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="signo" aria-hidden="true">=</div>
+                        <div class="bloque resultado">
+                            <span class="etiqueta">Práctica Profesional 3</span>
+                            <h3>Tu propio emprendimiento</h3>
+                            <p>
+                                En el último año diseñás tu emprendimiento gastronómico con todo lo aprendido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="franja" aria-labelledby="t-ficha">
+                <div class="contenedor">
+                    <div>
+                        <h2 id="t-ficha">Técnico/a Superior en Emprendimientos Gastronómicos</h2>
+                        <div class="acciones">
+                            <a class="boton boton-naranja" href="#/plan">Ver plan de estudios</a>
+                        </div>
+                    </div>
+                    <dl>
+                        <div>
+                            <dt>Duración</dt>
+                            <dd>3 años</dd>
+                        </div>
+                        <div>
+                            <dt>Carga horaria</dt>
+                            <dd>2758 horas cátedra</dd>
+                        </div>
+                        <div>
+                            <dt>Requisito</dt>
+                            <dd>Secundario completo</dd>
+                        </div>
+                        <div>
+                            <dt>Modalidad</dt>
+                            <dd>Presencial, turno noche</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+            <section class="seccion" aria-labelledby="t-ev">
+                <div class="contenedor">
+                    <div class="eventos-cab">
+                        <div class="cabecera">
+                            <h2 id="t-ev">Lo que pasa en el instituto</h2>
+                            <span class="raya" aria-hidden="true"></span>
+                            <p>Jornadas, prácticas y eventos de nuestros estudiantes.</p>
+                        </div>
+                        <div class="controles">
+                            <button type="button" aria-label="Ver eventos anteriores" data-car="-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M15 6l-6 6 6 6" />
+                                </svg></button><button type="button" aria-label="Ver más eventos" data-car="1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="carrusel" id="carrusel">
+                        <li>
+                            <a class="tarjeta" href="#/evento"><span class="cant"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                                        <circle cx="9" cy="10" r="2" />
+                                        <path d="M21 16l-5-5-8 8" />
+                                    </svg>4 fotos</span><img data-img="VERDURAS" src="img/img-636b5bfe.gif"
+                                    alt="Foto del evento Cierre del 1.° cuatrimestre" />
+                                <div class="texto">
+                                    <time>Julio 2026</time>
+                                    <h3>Cierre del 1.° cuatrimestre</h3>
+                                    <p>Muestra de las producciones del primer cuatrimestre.</p>
+                                    <span class="ver">Ver las fotos</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tarjeta" href="#/evento"><span class="cant"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                                        <circle cx="9" cy="10" r="2" />
+                                        <path d="M21 16l-5-5-8 8" />
+                                    </svg>8 fotos</span><img data-img="MORRON" src="img/img-636b5bfe.gif"
+                                    alt="Foto del evento Jornada de Gastronomía" />
+                                <div class="texto">
+                                    <time>Junio 2026</time>
+                                    <h3>Jornada de Gastronomía</h3>
+                                    <p>Jornada abierta con elaboraciones de los estudiantes.</p>
+                                    <span class="ver">Ver las fotos</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tarjeta" href="#/evento"><span class="cant"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                                        <circle cx="9" cy="10" r="2" />
+                                        <path d="M21 16l-5-5-8 8" />
+                                    </svg>6 fotos</span><img data-img="PLATO" src="img/img-636b5bfe.gif"
+                                    alt="Foto del evento Mateada Patria" />
+                                <div class="texto">
+                                    <time>Mayo 2026</time>
+                                    <h3>Mateada Patria</h3>
+                                    <p>Encuentro por el 25 de Mayo con estudiantes, docentes y familias.</p>
+                                    <span class="ver">Ver las fotos</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tarjeta" href="#/evento"><span class="cant"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                                        <circle cx="9" cy="10" r="2" />
+                                        <path d="M21 16l-5-5-8 8" />
+                                    </svg>5 fotos</span><img data-img="ESTUDIO" src="img/img-636b5bfe.gif"
+                                    alt="Foto del evento Noche de los Museos" />
+                                <div class="texto">
+                                    <time>Noviembre 2025</time>
+                                    <h3>Noche de los Museos</h3>
+                                    <p>El instituto abrió sus puertas a la comunidad.</p>
+                                    <span class="ver">Ver las fotos</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="pie-carrusel">
+                        <p>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                            </svg>Las novedades también se publican en nuestro Instagram:
+                            <a class="enlace" href="#/eventos">@ifts_2_ok</a>
+                        </p>
+                        <a class="boton boton-verde" href="#/eventos">Ver todos los eventos</a>
+                    </div>
+                </div>
+            </section>
+            <section class="llamado" aria-labelledby="t-llam">
+                <div class="contenedor">
+                    <div>
+                        <h2 id="t-llam">¿Querés estudiar con nosotros?</h2>
+                        <p>Escribinos tu consulta y te responde Bedelía.</p>
+                        <div class="acciones">
+                            <a class="boton boton-naranja" href="#/ingreso">Cómo inscribirte</a><a
+                                class="boton boton-claro" href="#/contacto">Enviar una consulta</a>
+                        </div>
+                    </div>
+                    <div class="datos-contacto">
+                        <div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" />
+                                <circle cx="12" cy="10" r="2.5" />
+                            </svg>
+                            <p>
+                                <strong>Cañada de Gómez 3850</strong><span>Villa Lugano, Ciudad de Buenos Aires</span>
+                            </p>
+                        </div>
+                        <div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M12 7v5l3 2" />
+                            </svg>
+                            <p><strong>Lunes a viernes, de 18 a 22 h</strong><span>Cursada presencial</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="pagina" data-pagina="carrera">
+            <section class="banner velo-medio" data-fondo="B_CARRERA">
+                <div class="contenedor">
+                    <h1>La carrera</h1>
+                    <span class="raya" aria-hidden="true"></span>
+                    <p>
+                        Técnico/a Superior en Emprendimientos Gastronómicos. Tres años de formación en cocina,
+                        gestión y emprendimiento.
+                    </p>
+                </div>
+            </section>
+            <nav class="subnav" aria-label="En esta página">
+                <div class="contenedor">
+                    <button type="button" data-ir="perfil">Perfil del egresado</button><button type="button"
+                        data-ir="aprender">¿Qué vas a aprender?</button><button type="button"
+                        data-ir="plan-estudios">Plan de estudios</button><button type="button"
+                        data-ir="autoridades">Autoridades y tutoría</button>
+                </div>
+            </nav>
+            <section class="seccion" id="perfil">
+                <div class="contenedor dos">
+                    <div class="texto-largo">
+                        <h2>Perfil del egresado</h2>
+                        <span class="raya" aria-hidden="true"></span>
+                        <p>
+                            Al egresar vas a estar capacitado/a para diseñar y gestionar emprendimientos
+                            gastronómicos, y para realizar tareas de planificación de la producción y de
+                            elaboración de productos alimenticios aptos para el consumo, conforme a las
+                            condiciones exigidas de higiene, seguridad y calidad.
+                        </p>
+                        <p>
+                            El instituto forma emprendedores gastronómicos desde hace 18 años, promoviendo la
+                            inserción laboral y los proyectos productivos que impactan en la comunidad.
+                        </p>
+                        <div class="acciones">
+                            <a class="boton boton-verde" href="#/plan">Ver plan de estudios</a><a class="enlace"
+                                href="#/contacto">Consultar por la inscripción</a>
+                        </div>
+                    </div>
+                    <div class="tarjeta-simple">
+                        <h3 style="margin-bottom: 16px">Datos de la carrera</h3>
+                        <ul class="enlaces">
+                            <li>
+                                <a href="#/plan"><span><strong>Título</strong><span>Técnico/a Superior en
+                                            Emprendimientos Gastronómicos</span></span></a>
+                            </li>
+                            <li>
+                                <a href="#/plan"><span><strong>Duración y carga horaria</strong><span>3 años, 2758 horas
+                                            cátedra</span></span></a>
+                            </li>
+                            <li>
+                                <a href="#/plan"><span><strong>Requisito</strong><span>Secundario
+                                            completo</span></span></a>
+                            </li>
+                            <li>
+                                <a href="#/contacto"><span><strong>Cursada</strong><span>Presencial, de lunes a viernes
+                                            de 18 a 22 h</span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="seccion seccion-alt" id="aprender">
+                <div class="contenedor">
+                    <div class="cabecera">
+                        <h2>¿Qué vas a aprender?</h2>
+                        <span class="raya" aria-hidden="true"></span>
+                        <p>Cuatro áreas formativas que combinan cocina, gestión y práctica profesional.</p>
+                    </div>
+                    <ul class="areas">
+                        <li>
+                            <a class="area area-verde" href="#/plan" data-abrir="p2">
+                                <div class="area-cab">
+                                    <span class="icono ic-verde"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.9" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M7 3v7a2 2 0 0 0 2 2v9M5 3v5M9 3v5M17 3c-2 1.5-3 4-3 7h3v11" />
+                                        </svg></span>
+                                    <h3>Producción gastronómica</h3>
+                                </div>
+                                <p>
+                                    Talleres de carnes, vegetales, pizzas y pastas, panadería, pastelería, buffet,
+                                    catering y cocina nacional e internacional.
+                                </p>
+                                <span class="base-area"><span class="cuenta">11 materias y talleres</span><span
+                                        class="ver-mat">Ver materias</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="area area-naranja" href="#/plan" data-abrir="p3">
+                                <div class="area-cab">
+                                    <span class="icono ic-naranja"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.9" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M3 21h18M6 17v-5M11 17V7M16 17v-8M20 6l-4 3-5-2-5 4" />
+                                        </svg></span>
+                                    <h3>Gestión y administración</h3>
+                                </div>
+                                <p>
+                                    Microempresa, contabilidad, comercialización, recursos humanos, compras y
+                                    organización de eventos gastronómicos.
+                                </p>
+                                <span class="base-area"><span class="cuenta">8 materias</span><span class="ver-mat">Ver
+                                        materias</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="area area-verde" href="#/plan" data-abrir="p1">
+                                <div class="area-cab">
+                                    <span class="icono ic-verde"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.9" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <circle cx="11" cy="11" r="6.5" />
+                                            <path d="M20.5 20.5l-4.8-4.8" />
+                                        </svg></span>
+                                    <h3>Análisis del sector</h3>
+                                </div>
+                                <p>
+                                    Introducción a la gastronomía, industria de la hospitalidad, economía y
+                                    organización empresarial.
+                                </p>
+                                <span class="base-area"><span class="cuenta">5 materias</span><span class="ver-mat">Ver
+                                        materias</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="area area-naranja" href="#/plan" data-abrir="p4">
+                                <div class="area-cab">
+                                    <span class="icono ic-naranja"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.9" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M3 9l1.6-5h14.8L21 9M4 9h16v11H4zM9.5 20v-5.5h5V20" />
+                                        </svg></span>
+                                    <h3>Prácticas profesionales</h3>
+                                </div>
+                                <p>
+                                    Tres prácticas: observación organizacional, organización de la producción y
+                                    diseño de emprendimientos gastronómicos.
+                                </p>
+                                <span class="base-area"><span class="cuenta">3 prácticas</span><span class="ver-mat">Ver
+                                        materias</span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="seccion" id="plan-estudios">
+                <div class="contenedor">
+                    <div class="cabecera">
+                        <h2>Plan de estudios</h2>
+                        <span class="raya" aria-hidden="true"></span>
+                        <p>
+                            Materias, régimen y carga horaria de la tecnicatura, según la Resolución N.°
+                            1202/MEGC/2007.
+                        </p>
+                    </div>
+                    <div class="pestanas" role="tablist" data-grupo="plan">
+                        <button role="tab" aria-selected="true" data-tab="p1">Análisis del sector</button><button
+                            role="tab" aria-selected="false" data-tab="p2">
+                            Producción gastronómica</button><button role="tab" aria-selected="false" data-tab="p3">
+                            Gestión y administración</button><button role="tab" aria-selected="false" data-tab="p4">
+                            Prácticas profesionales
+                        </button>
+                    </div>
+                    <div class="panel-tab activa" id="p1" role="tabpanel">
+                        <div class="tabla-caja">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Materia</th>
+                                        <th>Régimen</th>
+                                        <th>Horas cátedra</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Introducción a la Gastronomía</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Industria de la hospitalidad</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>64</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Principios de Economía</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Herramientas de Investigación</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Organización empresarial</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>64</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-tab" id="p2" role="tabpanel">
+                        <div class="tabla-caja">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Materia</th>
+                                        <th>Régimen</th>
+                                        <th>Horas cátedra</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Elaboraciones a base de vegetales, cereales y huevos</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>144</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elaboraciones a base de carnes</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>144</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elaboración de pizzas y pastas</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elaboraciones de buffet</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Servicios de catering</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>64</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cocina nacional e internacional</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>64</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elaboraciones de Panadería</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pastelería básica</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Repostería</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>64</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seguridad e higiene en la Gastronomía</td>
+                                        <td>Materia anual</td>
+                                        <td>96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nutrición</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>64</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-tab" id="p3" role="tabpanel">
+                        <div class="tabla-caja">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Materia</th>
+                                        <th>Régimen</th>
+                                        <th>Horas cátedra</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Introducción general a la microempresa</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>64</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elementos de Administración y Contabilidad</td>
+                                        <td>Materia anual</td>
+                                        <td>128</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Comercialización</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>48</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Recursos humanos</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>64</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Compras y gestión de stock</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>48</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Organización de eventos gastronómicos</td>
+                                        <td>Materia cuatrimestral</td>
+                                        <td>80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Taller de comunicación escrita</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>72</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inglés técnico</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>48</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-tab" id="p4" role="tabpanel">
+                        <div class="tabla-caja">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Materia</th>
+                                        <th>Régimen</th>
+                                        <th>Horas cátedra</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Práctica Profesional 1: Observación organizacional</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>48</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Práctica Profesional 2: Organización de la producción</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>48</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Práctica Profesional 3: Diseño de Emprendimientos Gastronómicos</td>
+                                        <td>Taller cuatrimestral</td>
+                                        <td>160</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="acciones">
+                        <a class="boton boton-verde" href="#/plan"><svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                                <path d="M14 3v6h6M8 13h8M8 17h5" />
+                            </svg>Régimen de correlatividades (PDF)</a><a class="boton boton-linea" href="#/plan"><svg
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M7 17L17 7M9 7h8v8" />
+                            </svg>Resolución oficial del plan</a>
+                    </div>
+                </div>
+            </section>
+            <section class="seccion seccion-autoridades" id="autoridades" data-fondo="AUTORIDADES">
+                <div class="contenedor">
+                    <div class="cabecera">
+                        <h2>Autoridades y tutoría</h2>
+                        <span class="raya" aria-hidden="true"></span>
+                        <p>Equipo de conducción del instituto y acompañamiento a los estudiantes.</p>
+                    </div>
+                    <div class="personas">
+                        <div class="tarjeta-simple persona">
+                            <span class="avatar">CD</span>
+                            <div><strong>Cecilia C. Dipiazza</strong><span>Rectora</span></div>
+                        </div>
+                        <div class="tarjeta-simple persona">
+                            <span class="avatar">JS</span>
+                            <div>
+                                <strong>Prof. Julia Sboro</strong><span>Tutora institucional: acompaña a los estudiantes
+                                    durante la cursada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="pagina" data-pagina="ingreso">
+            <section class="banner velo-fuerte" data-fondo="B_PLAN">
+                <div class="contenedor">
+                    <h1>Ingreso</h1>
+                    <span class="raya" aria-hidden="true"></span>
+                    <p>Cómo inscribirte en la Tecnicatura Superior en Emprendimientos Gastronómicos.</p>
+                </div>
+            </section>
+            <section class="seccion">
+                <div class="contenedor">
+                    <div class="cabecera">
+                        <h2>Ingreso <span data-anio="0"></span></h2>
+                        <span class="raya" aria-hidden="true"></span>
+                        <p>
+                            Inscripción para el primer cuatrimestre. El preingreso a las carreras de Técnica
+                            Superior lo organiza la Agencia de Habilidades para el Futuro del Gobierno de la
+                            Ciudad.
+                        </p>
+                    </div>
+                    <div class="vigente">
+                        <span class="etiqueta et-naranja">Fechas a confirmar</span><span style="color: var(--suave)">Se
+                            publican cuando la Agencia de Habilidades para el Futuro las comunica.</span>
+                    </div>
+                    <ol class="cronograma">
+                        <li>
+                            <span class="paso-num">1</span><span class="paso-fecha">Del 6 de noviembre de <span
+                                    data-anio="-1"></span> al 5 de marzo de
+                                <span data-anio="0"></span></span>
+                            <h3>Preinscripción</h3>
+                            <p>
+                                En SIU Guaraní: cargás tus datos, elegís la carrera, el instituto y el horario, y
+                                subís tu DNI y el título secundario.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="paso-num">2</span><span class="paso-fecha">Del 6 de noviembre de <span
+                                    data-anio="-1"></span> al 7 de marzo de
+                                <span data-anio="0"></span></span>
+                            <h3>Curso de preparación</h3>
+                            <p>
+                                Virtual y autoasistido, en el aula Moodle. No es obligatorio, pero te prepara para
+                                los exámenes.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="paso-num">3</span><span class="paso-fecha">Del 3 de febrero al 7 de marzo de
+                                <span data-anio="0"></span></span>
+                            <h3>Exámenes obligatorios</h3>
+                            <p>
+                                ECOPE e IPEMAT, en Moodle. Tenés un solo intento y dos horas para cada examen.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="paso-num">4</span><span class="paso-fecha">Desde el 12 de marzo de <span
+                                    data-anio="0"></span></span>
+                            <h3>Confirmación de vacante</h3>
+                            <p>
+                                Las vacantes se asignan por orden de mérito, según la suma de los puntajes de
+                                ambos exámenes.
+                            </p>
+                        </li>
+                    </ol>
+                    <div class="acciones">
+                        <a class="boton boton-naranja"
+                            href="https://guarani-autogestionagencia.bue.edu.ar/preinscripcion/SSAALV/acceso"
+                            target="_blank" rel="noopener">Ir a la preinscripción<svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M7 17L17 7M9 7h8v8" />
+                            </svg></a><a class="boton boton-linea"
+                            href="https://www.buenosaires.gob.ar/educacion/estudiantes/sistema-educativo/terciario/formacion-tecnica-superior"
+                            target="_blank" rel="noopener">Ver la oferta educativa<svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M7 17L17 7M9 7h8v8" />
+                            </svg></a>
+                    </div>
+                    <details class="archivo">
+                        <summary>
+                            Ingresos anteriores
+                            <span class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg></span>
+                        </summary>
+                        <div class="lista">
+                            <a href="#/ingreso"><strong>Ingreso <span data-anio="-1"></span></strong><span>Cronograma y
+                                    material de preingreso</span></a><a href="#/ingreso"><strong>Ingreso <span
+                                        data-anio="-2"></span></strong><span>Cronograma y material de
+                                    preingreso</span></a>
+                        </div>
+                    </details>
+                </div>
+            </section>
+            <section class="seccion seccion-alt">
+                <div class="contenedor dos">
+                    <div>
+                        <div class="cabecera">
+                            <h2>Preguntas frecuentes</h2>
+                            <span class="raya" aria-hidden="true"></span>
+                        </div>
+                        <details class="faq">
+                            <summary>
+                                ¿Qué necesito para inscribirme?<span class="flecha"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg></span>
+                            </summary>
+                            <p>
+                                Tener el secundario completo y cargar en SIU Guaraní tu DNI y el título. Si tenés
+                                más de 25 años y no terminaste el secundario, escribí a
+                                preingreso.ifts@bue.edu.ar.
+                            </p>
+                        </details>
+                        <details class="faq">
+                            <summary>
+                                ¿Puedo anotarme en más de una carrera?<span class="flecha"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg></span>
+                            </summary>
+                            <p>
+                                No. En la preinscripción elegís una sola tecnicatura y el instituto donde querés
+                                cursar.
+                            </p>
+                        </details>
+                        <details class="faq">
+                            <summary>
+                                ¿Cómo entro al curso de preparación?<span class="flecha"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg></span>
+                            </summary>
+                            <p>
+                                Unos 7 días después de preinscribirte te llega un correo con el usuario y la
+                                contraseña del aula virtual.
+                            </p>
+                        </details>
+                        <details class="faq">
+                            <summary>
+                                ¿Qué se evalúa en los exámenes?<span class="flecha"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg></span>
+                            </summary>
+                            <p>
+                                Los contenidos de Estrategias de Comprensión y Producción Escrita (ECOPE) e
+                                Introducción al Pensamiento Matemático (IPEMAT). Los módulos de Pensamiento
+                                Computacional e Introducción a la Técnica Superior no tienen examen.
+                            </p>
+                        </details>
+                        <details class="faq">
+                            <summary>
+                                ¿Cómo se asignan las vacantes?<span class="flecha"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg></span>
+                            </summary>
+                            <p>
+                                Por orden de mérito, según el puntaje total de los dos exámenes. La confirmación
+                                se comunica a partir de mediados de marzo.
+                            </p>
+                        </details>
+                    </div>
+                    <aside class="material">
+                        <img src="img/img-47d91167.jpg" alt="Portada de la guía de preingreso" />
+                        <div class="material-cuerpo">
+                            <span class="etiqueta et-verde">Material de preingreso</span>
+                            <h3>Guía de preingreso a Técnica Superior</h3>
+                            <p>Presentación de la Agencia de Habilidades para el Futuro. PDF de 6 páginas.</p>
+                            <div class="acciones">
+                                <button class="boton boton-verde boton-chico" type="button" id="ver-pdf">
+                                    Ver la guía</button><button class="boton boton-linea boton-chico" type="button"
+                                    id="bajar-pdf">
+                                    Descargar
+                                </button>
+                            </div>
+                            <p class="nota-material">
+                                Consultas sobre el preingreso:
+                                <strong>preingreso.ifts@bue.edu.ar</strong><br />Consultas sobre el instituto:
+                                <a class="enlace" href="#/contacto" style="min-height: 0">escribile a Bedelía</a>
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </div>
+        <div class="pagina" data-pagina="alumnos">
+            <section class="banner velo-suave" data-fondo="B_ALUMNOS">
+                <div class="contenedor">
+                    <h1>Alumnos</h1>
+                    <span class="raya" aria-hidden="true"></span>
+                    <p>Horarios de cursada, mesas de examen y plataformas del instituto.</p>
+                </div>
+            </section>
+            <section class="seccion">
+                <div class="contenedor">
+                    <div class="vigente">
+                        <span class="etiqueta et-verde"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>Vigente</span><strong>2.° cuatrimestre 2026</strong><span
+                            style="color: var(--suave)">Actualizado el 10 de agosto de 2026</span>
+                    </div>
+                    <div class="pestanas" role="tablist" data-grupo="alu">
+                        <button role="tab" aria-selected="true" data-tab="h1">Horarios 1.° año</button><button
+                            role="tab" aria-selected="false" data-tab="h2">Horarios 2.° año</button><button role="tab"
+                            aria-selected="false" data-tab="h3">Horarios 3.° año</button><button role="tab"
+                            aria-selected="false" data-tab="m1">Mesas de examen</button><button role="tab"
+                            aria-selected="false" data-tab="i1">Inscripciones</button>
+                    </div>
+                    <div class="panel-tab activa" id="h1">
+                        <div class="tabla-caja">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Día (18 a 22 h)</th>
+                                        <th>Materia</th>
+                                        <th>Aula</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Lunes</td>
+                                        <td>Introducción a la Gastronomía</td>
+                                        <td>Aula 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Martes</td>
+                                        <td>Elaboraciones a base de vegetales, cereales y huevos</td>
+                                        <td>Cocina 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Miércoles</td>
+                                        <td>Principios de Economía</td>
+                                        <td>Aula 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jueves</td>
+                                        <td>Seguridad e higiene en la Gastronomía</td>
+                                        <td>Aula 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Viernes</td>
+                                        <td>Industria de la hospitalidad</td>
+                                        <td>Aula 2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-tab" id="h2">
+                        <div class="tabla-caja">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Día (18 a 22 h)</th>
+                                        <th>Materia</th>
+                                        <th>Aula</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Lunes</td>
+                                        <td>Elaboraciones a base de carnes</td>
+                                        <td>Cocina 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Martes</td>
+                                        <td>Elementos de Administración y Contabilidad</td>
+                                        <td>Aula 4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Miércoles</td>
+                                        <td>Pastelería básica</td>
+                                        <td>Cocina 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jueves</td>
+                                        <td>Comercialización</td>
+                                        <td>Aula 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Viernes</td>
+                                        <td>Elaboraciones de buffet</td>
+                                        <td>Cocina 1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-tab" id="h3">
+                        <div class="tabla-caja">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Día (18 a 22 h)</th>
+                                        <th>Materia</th>
+                                        <th>Aula</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Lunes</td>
+                                        <td>Organización de eventos gastronómicos</td>
+                                        <td>Aula 4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Martes</td>
+                                        <td>Servicios de catering</td>
+                                        <td>Cocina 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Miércoles</td>
+                                        <td>Recursos humanos</td>
+                                        <td>Aula 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jueves</td>
+                                        <td>Práctica Profesional 3</td>
+                                        <td>Cocina 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Viernes</td>
+                                        <td>Inglés técnico</td>
+                                        <td>Aula 2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-tab" id="m1">
+                        <div class="tabla-caja">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Materia</th>
+                                        <th>Fecha</th>
+                                        <th>Hora</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Introducción a la Gastronomía</td>
+                                        <td>Lunes 30 de noviembre</td>
+                                        <td>18 h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Principios de Economía</td>
+                                        <td>Martes 1 de diciembre</td>
+                                        <td>18 h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elaboraciones a base de carnes</td>
+                                        <td>Miércoles 2 de diciembre</td>
+                                        <td>18 h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Comercialización</td>
+                                        <td>Jueves 3 de diciembre</td>
+                                        <td>19 h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Organización de eventos gastronómicos</td>
+                                        <td>Viernes 4 de diciembre</td>
+                                        <td>18 h</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-tab" id="i1">
+                        <div class="tabla-caja">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Trámite</th>
+                                        <th>Fechas</th>
+                                        <th>Dónde</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Inscripción a mesas del turno noviembre-diciembre</td>
+                                        <td>Del 16 al 20 de noviembre</td>
+                                        <td>SIU Guaraní</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Inscripción a materias del 1.° cuatrimestre <span data-anio="0"></span>
+                                        </td>
+                                        <td>Marzo de <span data-anio="0"></span> (a confirmar)</td>
+                                        <td>SIU Guaraní</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="acciones">
+                        <a class="boton boton-linea" href="#/alumnos"><svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                                <path d="M14 3v6h6M8 13h8M8 17h5" />
+                            </svg>Descargar horarios (PDF)</a>
+                    </div>
+                </div>
+            </section>
+            <section class="seccion seccion-alt">
+                <div class="contenedor">
+                    <div class="cabecera">
+                        <h2>Enlaces útiles</h2>
+                        <span class="raya" aria-hidden="true"></span>
+                        <p>Las plataformas que usás durante la cursada, en un solo lugar.</p>
+                    </div>
+                    <ul class="enlaces dos-col">
+                        <li>
+                            <a href="#/alumnos"><span><strong>SIU Guaraní: alumnos</strong><span>Inscripción a materias
+                                        y exámenes, historia académica</span><span class="externo">Sitio
+                                        externo</span></span><span class="flecha"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17L17 7M9 7h8v8" />
+                                    </svg></span></a>
+                        </li>
+                        <li>
+                            <a href="#/alumnos"><span><strong>SIU Guaraní: gestión académica</strong><span>Acceso para
+                                        profesores y Secretaría Académica</span><span class="externo">Sitio
+                                        externo</span></span><span class="flecha"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17L17 7M9 7h8v8" />
+                                    </svg></span></a>
+                        </li>
+                        <li>
+                            <a href="#/alumnos"><span><strong>Aulas virtuales</strong><span>Campus Moodle del
+                                        instituto</span><span class="externo">Sitio externo</span></span><span
+                                    class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="M7 17L17 7M9 7h8v8" />
+                                    </svg></span></a>
+                        </li>
+                        <li>
+                            <a href="#/alumnos"><span><strong>Mi Argentina</strong><span>Título digital para
+                                        egresados</span><span class="externo">Sitio externo</span></span><span
+                                    class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="M7 17L17 7M9 7h8v8" />
+                                    </svg></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="pagina" data-pagina="eventos">
+            <section class="banner velo-suave" data-fondo="B_EVENTOS">
+                <div class="contenedor">
+                    <h1>Galería de eventos</h1>
+                    <span class="raya" aria-hidden="true"></span>
+                    <p>
+                        Jornadas, muestras y encuentros que reflejan la experiencia real de la carrera y del
+                        instituto.
+                    </p>
+                </div>
+            </section>
+            <section class="seccion">
+                <div class="contenedor">
+                    <div class="eventos-cab">
+                        <div class="cabecera">
+                            <h2>Eventos 2026</h2>
+                            <span class="raya" aria-hidden="true"></span>
+                            <p>
+                                Explorá las jornadas, muestras y encuentros gastronómicos que se realizaron este
+                                año en el instituto.
+                            </p>
+                        </div>
+                        <div class="vista" role="group" aria-label="Cómo ver los eventos">
+                            <button type="button" aria-pressed="true" data-vista="grilla">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                                    <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                                    <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                                    <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                                </svg><span>Cuadrícula</span></button><button type="button" aria-pressed="false"
+                                data-vista="lista">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="4" width="6" height="6" rx="1.5" />
+                                    <rect x="3" y="14" width="6" height="6" rx="1.5" />
+                                    <path d="M13 6h8M13 9h5M13 16h8M13 19h5" />
+                                </svg><span>Lista</span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="grilla-eventos">
+                        <li>
+                            <a class="tarjeta" href="#/evento"><span class="cant"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                                        <circle cx="9" cy="10" r="2" />
+                                        <path d="M21 16l-5-5-8 8" />
+                                    </svg>4 fotos</span><img data-img="VERDURAS" src="img/img-636b5bfe.gif"
+                                    alt="Foto del evento Cierre del 1.° cuatrimestre" />
+                                <div class="texto">
+                                    <time>Julio 2026</time>
+                                    <h3>Cierre del 1.° cuatrimestre</h3>
+                                    <p>Muestra de las producciones del primer cuatrimestre.</p>
+                                    <span class="ver">Ver las fotos</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tarjeta" href="#/evento"><span class="cant"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                                        <circle cx="9" cy="10" r="2" />
+                                        <path d="M21 16l-5-5-8 8" />
+                                    </svg>8 fotos</span><img data-img="MORRON" src="img/img-636b5bfe.gif"
+                                    alt="Foto del evento Jornada de Gastronomía" />
+                                <div class="texto">
+                                    <time>Junio 2026</time>
+                                    <h3>Jornada de Gastronomía</h3>
+                                    <p>Jornada abierta con elaboraciones de los estudiantes.</p>
+                                    <span class="ver">Ver las fotos</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tarjeta" href="#/evento"><span class="cant"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                                        <circle cx="9" cy="10" r="2" />
+                                        <path d="M21 16l-5-5-8 8" />
+                                    </svg>6 fotos</span><img data-img="PLATO" src="img/img-636b5bfe.gif"
+                                    alt="Foto del evento Mateada Patria" />
+                                <div class="texto">
+                                    <time>Mayo 2026</time>
+                                    <h3>Mateada Patria</h3>
+                                    <p>Encuentro por el 25 de Mayo con estudiantes, docentes y familias.</p>
+                                    <span class="ver">Ver las fotos</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <details class="archivo">
+                        <summary>
+                            Años anteriores
+                            <span class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg></span>
+                        </summary>
+                        <div class="lista">
+                            <a href="#/evento"><strong>Noche de los Museos</strong><span>Noviembre 2025</span></a><a
+                                href="#/evento"><strong>Colación de egresados</strong><span>Diciembre 2024</span></a><a
+                                href="#/evento"><strong>Jornada de Gastronomía</strong><span>Octubre 2024</span></a><a
+                                href="#/evento"><strong>Mateada Patria</strong><span>Mayo 2024</span></a>
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </div>
+        <div class="pagina" data-pagina="evento">
+            <section class="banner" data-fondo="PLATO">
+                <div class="contenedor">
+                    <p class="migas"><a href="#/eventos">Galería de eventos</a></p>
+                    <h1>Mateada Patria</h1>
+                    <span class="raya" aria-hidden="true"></span>
+                    <p>Encuentro por el 25 de Mayo con estudiantes, docentes y familias.</p>
+                </div>
+            </section>
+            <section class="seccion">
+                <div class="contenedor detalle">
+                    <div class="galeria">
+                        <div class="principal">
+                            <img id="foto-principal" data-img="PLATO" src="img/img-636b5bfe.gif"
+                                alt="Foto principal del evento" />
+                        </div>
+                        <div class="miniaturas">
+                            <button type="button" aria-pressed="true" data-foto="PLATO">
+                                <img data-img="PLATO" src="img/img-636b5bfe.gif"
+                                    alt="Foto 1 del evento" /></button><button type="button" aria-pressed="false"
+                                data-foto="VERDURAS">
+                                <img data-img="VERDURAS" src="img/img-636b5bfe.gif"
+                                    alt="Foto 2 del evento" /></button><button type="button" aria-pressed="false"
+                                data-foto="MORRON">
+                                <img data-img="MORRON" src="img/img-636b5bfe.gif"
+                                    alt="Foto 3 del evento" /></button><button type="button" aria-pressed="false"
+                                data-foto="ESTUDIO">
+                                <img data-img="ESTUDIO" src="img/img-636b5bfe.gif"
+                                    alt="Foto 4 del evento" /></button><button type="button" aria-pressed="false"
+                                data-foto="HERO">
+                                <img data-img="HERO" src="img/img-636b5bfe.gif" alt="Foto 5 del evento" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="info-evento">
+                        <div class="meta">
+                            <span class="etiqueta et-naranja">Mayo 2026</span><span class="etiqueta et-gris">6
+                                fotos</span>
+                        </div>
+                        <h2>Mateada Patria</h2>
+                        <p>
+                            Para celebrar el 25 de Mayo, estudiantes de todos los años prepararon pastelitos,
+                            tortas fritas y mate cocido para compartir con docentes, familias y vecinos del
+                            barrio.
+                        </p>
+                        <p>
+                            Fue también una práctica real de organización de eventos: planificación de compras,
+                            producción y atención del público.
+                        </p>
+                        <div class="caja-ig">
+                            <strong style="display: flex; gap: 8px; align-items: center"><svg width="22" height="22"
+                                    style="color: var(--naranja)" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                                    <circle cx="12" cy="12" r="4" />
+                                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                                </svg>Publicado desde Instagram</strong>
+                            <p>Esta publicación llegó al sitio con el hashtag #IFTSEventos.</p>
+                            <a class="enlace" href="#/evento">Ver la publicación en Instagram</a>
+                        </div>
+                        <div class="acciones">
+                            <a class="boton boton-linea" href="#/eventos"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M15 6l-6 6 6 6" />
+                                </svg>Volver a eventos</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="pagina" data-pagina="contacto">
+            <section class="banner velo-suave" data-fondo="B_CONTACTO">
+                <div class="contenedor">
+                    <h1>Contacto</h1>
+                    <span class="raya" aria-hidden="true"></span>
+                    <p>Escribinos y te responde Bedelía por correo.</p>
+                </div>
+            </section>
+            <section class="seccion">
+                <div class="contenedor dos">
+                    <form class="tarjeta-simple"
+                        onsubmit="event.preventDefault();document.getElementById('ok-contacto').classList.add('visible')">
+                        <div class="fila">
+                            <div class="campo">
+                                <label for="c-nombre">Nombre y apellido</label><input id="c-nombre" autocomplete="name"
+                                    placeholder="Ej.: Lucía Fernández" />
+                            </div>
+                            <div class="campo">
+                                <label for="c-mail">Correo electrónico</label><input id="c-mail" type="email"
+                                    autocomplete="email" placeholder="nombre@correo.com" />
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <label for="c-motivo">Motivo de la consulta</label><select id="c-motivo">
+                                <option>Inscripción a la carrera</option>
+                                <option>Horarios y mesas de examen</option>
+                                <option>Trámites y certificados</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="c-msj">Mensaje</label><textarea id="c-msj"
+                                placeholder="Escribí tu consulta"></textarea>
+                        </div>
+                        <label class="captcha"><input type="checkbox" /> No soy un robot</label>
+                        <button class="boton boton-naranja" type="submit">Enviar consulta</button>
+                        <p class="aviso" id="ok-contacto" role="status">
+                            Tu consulta fue enviada. Bedelía te va a responder a tu correo.
+                        </p>
+                    </form>
+                    <div class="tarjeta-simple">
+                        <h3 style="margin-bottom: 18px">Dónde y cuándo</h3>
+                        <ul class="enlaces">
+                            <li>
+                                <a href="#/contacto"><span><strong>Cañada de Gómez 3850</strong><span>Villa Lugano,
+                                            Ciudad de Buenos Aires</span></span><span class="flecha"><svg
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" />
+                                            <circle cx="12" cy="10" r="2.5" />
+                                        </svg></span></a>
+                            </li>
+                            <li>
+                                <a href="#/contacto"><span><strong>Lunes a viernes, de 18 a 22 h</strong><span>Cursada
+                                            presencial</span></span><span class="flecha"><svg viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <circle cx="12" cy="12" r="9" />
+                                            <path d="M12 7v5l3 2" />
+                                        </svg></span></a>
+                            </li>
+                            <li>
+                                <a href="#/contacto"><span><strong>Instagram</strong><span>@ifts_2_ok</span></span><span
+                                        class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                                            aria-hidden="true">
+                                            <rect x="3" y="3" width="18" height="18" rx="5" />
+                                            <circle cx="12" cy="12" r="4" />
+                                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                                        </svg></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="pie" id="pie">
+        <div class="contenedor">
+            <div>
+                <div class="logo-pie">
+                    <img data-img="LOGO" src="img/img-636b5bfe.gif" alt="" /><strong>IFTS N.° 2</strong>
+                </div>
+                <p>
+                    Instituto de Formación Técnica Superior N.° 2, D.E. 20.<br />Ministerio de Educación,
+                    Gobierno de la Ciudad de Buenos Aires.
+                </p>
+            </div>
+            <div>
+                <h3>El instituto</h3>
+                <ul>
+                    <li><a href="#/carrera">La carrera</a></li>
+                    <li><a href="#/plan">Plan de estudios</a></li>
+                    <li><a href="#/ingreso">Ingreso</a></li>
+                    <li><a href="#/carrera">Autoridades y tutoría</a></li>
+                    <li><a href="#/eventos">Eventos</a></li>
+                    <li><a href="#/contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Plataformas</h3>
+                <ul>
+                    <li><a href="#/alumnos">SIU Guaraní</a></li>
+                    <li><a href="#/alumnos">Aulas virtuales</a></li>
+                    <li><a href="#/alumnos">Mi Argentina</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Redes</h3>
+                <ul>
+                    <li><a href="#/eventos">Instagram</a></li>
+                    <li><a href="#/eventos">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie-final">
+            <div class="contenedor">
+                <p style="color: #e4f1e9">Cañada de Gómez 3850, Villa Lugano, CABA</p>
+                <a href="#/login"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="5" y="11" width="14" height="10" rx="2" />
+                        <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+                    </svg>Acceso institucional</a>
+            </div>
+        </div>
+    </footer>
+    <div class="login" data-pagina="login">
+        <div class="lado-foto">
+            <a class="volver-foto" href="#/inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M19 12H5M11 6l-6 6 6 6" />
+                </svg>Volver al sitio</a>
+            <div>
+                <h2>Panel de administración</h2>
+                <p>Gestión de eventos, horarios y contenido del sitio.</p>
+            </div>
+        </div>
+        <div class="lado-form">
+            <form id="form-login" novalidate>
+                <a class="marca" href="#/inicio"><img data-img="LOGO" src="img/img-636b5bfe.gif"
+                        alt="Logo del IFTS N.° 2" /><span><strong>IFTS N.° 2</strong><small>Volver al
+                            sitio</small></span></a>
+                <h1>Iniciar sesión</h1>
+                <p class="sub">Ingresá con el usuario que te asignó el instituto.</p>
+                <div class="campo">
+                    <label for="l-mail">Correo electrónico</label><input id="l-mail" type="email"
+                        autocomplete="username" value="matias.pelaez@ifts2.edu.ar" />
+                </div>
+                <div class="campo">
+                    <label for="l-pass">Contraseña</label><input id="l-pass" type="password"
+                        autocomplete="current-password" value="contraseña" />
+                </div>
+                <p class="aviso" id="error-login" role="alert"></p>
+                <button class="boton boton-verde" type="submit" style="width: 100%">Ingresar</button>
+            </form>
+        </div>
+    </div>
+    <div class="admin" data-pagina="admin">
+        <aside class="lateral">
+            <a class="marca" href="#/admin"><img data-img="LOGO" src="img/img-636b5bfe.gif"
+                    alt="Logo del IFTS N.° 2" /><span><strong>IFTS N.° 2</strong><small>Panel de
+                        administración</small></span></a><a class="item actual" href="#/admin"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+                </svg><span>Inicio</span></a><a class="item" href="#/admin-eventos" data-solo-admin><svg
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <circle cx="9" cy="10" r="2" />
+                    <path d="M21 16l-5-5-8 8" />
+                </svg><span>Eventos</span></a><a class="item" href="#/admin-academica"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="17" rx="2" />
+                    <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg><span>Información académica</span></a><a class="item" href="#/admin-contenido"
+                data-solo-admin><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                    <path d="M14 3v6h6M8 13h8M8 17h5" />
+                </svg><span>Contenido institucional</span></a>
+            <a class="item" href="#/admin-usuarios" data-solo-admin><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <circle cx="9" cy="8" r="3.5" />
+                    <path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5c2.2.7 4 2.5 4 5.5" />
+                </svg><span>Usuarios</span></a>
+            <div class="abajo">
+                <a class="item" href="#/inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg><span>Ver el sitio</span></a><a class="item" href="#/login"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                    </svg><span>Cerrar sesión</span></a>
+            </div>
+        </aside>
+        <main class="contenido-admin">
+            <div class="barra-admin">
+                <span class="usuario" data-usuario><span class="avatar">MP</span>Matías Peláez</span>
+            </div>
+            <div class="cab-admin">
+                <div>
+                    <h1 id="saludo-admin">Hola, Matías</h1>
+                    <p>¿Qué querés actualizar hoy?</p>
+                </div>
+            </div>
+            <div class="atajos">
+                <a class="atajo at-1" data-solo-admin href="#/admin-evento-nuevo"><svg viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M12 5v14M5 12h14" />
+                    </svg>
+                    <div>
+                        <strong>Cargar un evento</strong><br /><span>Fotos, fecha y descripción</span>
+                    </div>
+                </a><a class="atajo at-2" href="#/admin-academica"><svg viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <rect x="3" y="4" width="18" height="17" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                    </svg>
+                    <div>
+                        <strong>Publicar horarios o mesas</strong><br /><span>El período anterior pasa al archivo</span>
+                    </div>
+                </a><a class="atajo at-3" data-solo-admin href="#/admin-contenido"><svg viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M4 20h4L19 9l-4-4L4 16z" />
+                    </svg>
+                    <div>
+                        <strong>Editar contenido</strong><br /><span>Plan, autoridades, enlaces</span>
+                    </div>
+                </a>
+            </div>
+            <div class="resumen">
+                <div class="dato" data-solo-admin><span>Eventos visibles</span><strong>3</strong></div>
+                <a class="dato" data-solo-admin href="#/admin-eventos" style="text-decoration: none"><span>Publicaciones
+                        de Instagram para revisar</span><strong>1</strong></a>
+                <div class="dato">
+                    <span>Período académico vigente</span><strong style="font-size: 22px">2.° cuatrimestre 2026</strong>
+                </div>
+            </div>
+            <div class="caja">
+                <h2>Últimos cambios</h2>
+                <ul class="actividad">
+                    <li>
+                        <span>Se publicó el evento <strong>Mateada Patria</strong> desde Instagram</span><time>Hace 2
+                            días</time>
+                    </li>
+                    <li>
+                        <span>Se publicaron los horarios del 2.° cuatrimestre 2026</span><time>10 de agosto</time>
+                    </li>
+                    <li>
+                        <span>Los horarios del 1.° cuatrimestre pasaron al archivo</span><time>10 de agosto</time>
+                    </li>
+                    <li>
+                        <span>Se actualizó la sección <strong>Autoridades</strong></span><time>2 de agosto</time>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <div class="admin" data-pagina="admin-eventos">
+        <aside class="lateral">
+            <a class="marca" href="#/admin"><img data-img="LOGO" src="img/img-636b5bfe.gif"
+                    alt="Logo del IFTS N.° 2" /><span><strong>IFTS N.° 2</strong><small>Panel de
+                        administración</small></span></a><a class="item" href="#/admin"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+                </svg><span>Inicio</span></a><a class="item actual" href="#/admin-eventos" data-solo-admin><svg
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <circle cx="9" cy="10" r="2" />
+                    <path d="M21 16l-5-5-8 8" />
+                </svg><span>Eventos</span></a><a class="item" href="#/admin-academica"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="17" rx="2" />
+                    <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg><span>Información académica</span></a><a class="item" href="#/admin-contenido"
+                data-solo-admin><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                    <path d="M14 3v6h6M8 13h8M8 17h5" />
+                </svg><span>Contenido institucional</span></a>
+            <a class="item" href="#/admin-usuarios" data-solo-admin><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <circle cx="9" cy="8" r="3.5" />
+                    <path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5c2.2.7 4 2.5 4 5.5" />
+                </svg><span>Usuarios</span></a>
+            <div class="abajo">
+                <a class="item" href="#/inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg><span>Ver el sitio</span></a><a class="item" href="#/login"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                    </svg><span>Cerrar sesión</span></a>
+            </div>
+        </aside>
+        <main class="contenido-admin">
+            <div class="barra-admin">
+                <span class="usuario" data-usuario><span class="avatar">MP</span>Matías Peláez</span>
+            </div>
+            <div class="cab-admin">
+                <div>
+                    <h1>Eventos</h1>
+                    <p>Eventos cargados desde el panel y publicaciones recibidas desde Instagram.</p>
+                </div>
+                <div style="display: flex; gap: 12px; align-items: center">
+                    <a class="boton boton-verde" href="#/admin-evento-nuevo"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M12 5v14M5 12h14" />
+                        </svg>Cargar evento</a>
+                </div>
+            </div>
+            <div class="caja" style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+          ">
+                <div style="display: flex; gap: 14px; align-items: center">
+                    <span class="icono ic-naranja"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" />
+                            <circle cx="12" cy="12" r="4" />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                        </svg></span>
+                    <div>
+                        <strong>Instagram conectado: @ifts_2_ok</strong>
+                        <p style="color: var(--suave); font-size: 15px">
+                            Se incorporan las publicaciones con #IFTSEventos. Revisión diaria; la última fue hoy
+                            a las 6:00.
+                        </p>
+                    </div>
+                </div>
+                <span class="etiqueta et-verde"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20 6L9 17l-5-5" />
+                    </svg>Funcionando</span>
+            </div>
+            <div class="caja descarga-archivo" data-solo-admin>
+                <div>
+                    <strong>Descargar lo archivado</strong>
+                    <p style="color: var(--suave); font-size: 15px">
+                        Guardá una copia de los eventos archivados en tu computadora para llevarla a un Drive
+                        o a un disco externo.
+                    </p>
+                </div>
+                <div class="descarga-controles">
+                    <label for="d-alcance" class="solo-lectores">Qué descargar</label>
+                    <select id="d-alcance">
+                        <option>Por año</option>
+                        <option>Por cuatrimestre</option>
+                        <option>Un evento</option>
+                    </select>
+                    <select id="d-periodo" aria-label="Período">
+                        <option>2025</option>
+                        <option>2026</option>
+                    </select>
+                    <button class="boton boton-verde boton-chico" type="button" id="d-boton">
+                        Descargar
+                    </button>
+                </div>
+                <p class="aviso" id="ok-descarga" role="status">
+                    Se preparó la descarga con los eventos archivados del período elegido.
+                </p>
+            </div>
+            <div class="pestanas">
+                <button aria-selected="true">Todos (5)</button><button aria-selected="false">Para revisar
+                    (1)</button><button aria-selected="false">Visibles (3)</button><button aria-selected="false">Ocultos
+                    (0)</button><button aria-selected="false">Archivados (1)</button>
+            </div>
+            <div class="tabla-caja">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Evento</th>
+                            <th>Origen</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img class="miniatura" data-img="MORRON" src="img/img-636b5bfe.gif" alt="" />
+                            </td>
+                            <td>
+                                <strong>Clase de pastelería básica</strong><br /><span
+                                    style="color: var(--suave); font-size: 14px">Septiembre 2026, 3 fotos</span>
+                            </td>
+                            <td><span class="etiqueta et-naranja">Instagram</span></td>
+                            <td><span class="etiqueta et-naranja">Para revisar</span></td>
+                            <td>
+                                <div class="acciones-fila">
+                                    <button class="boton boton-verde boton-chico" type="button">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M20 6L9 17l-5-5" />
+                                        </svg>Aprobar</button><button class="boton boton-linea boton-chico"
+                                        type="button">Descartar</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="miniatura" data-img="PLATO" src="img/img-636b5bfe.gif" alt="" />
+                            </td>
+                            <td>
+                                <strong>Mateada Patria</strong><br /><span
+                                    style="color: var(--suave); font-size: 14px">Mayo 2026, 6 fotos</span>
+                            </td>
+                            <td><span class="etiqueta et-naranja">Instagram</span></td>
+                            <td><span class="etiqueta et-verde">Visible</span></td>
+                            <td>
+                                <div class="acciones-fila">
+                                    <a class="boton boton-linea boton-chico" href="#/admin-evento-nuevo"><svg
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M4 20h4L19 9l-4-4L4 16z" />
+                                        </svg>Editar</a><button class="boton boton-linea boton-chico" type="button">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                                            <circle cx="12" cy="12" r="3" />
+                                        </svg>Ocultar</button><button class="boton boton-linea boton-chico"
+                                        type="button" aria-label="Eliminar Mateada Patria">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="miniatura" data-img="MORRON" src="img/img-636b5bfe.gif" alt="" />
+                            </td>
+                            <td>
+                                <strong>Jornada de Gastronomía</strong><br /><span
+                                    style="color: var(--suave); font-size: 14px">Junio 2026, 8 fotos</span>
+                            </td>
+                            <td><span class="etiqueta et-gris">Manual</span></td>
+                            <td><span class="etiqueta et-verde">Visible</span></td>
+                            <td>
+                                <div class="acciones-fila">
+                                    <a class="boton boton-linea boton-chico" href="#/admin-evento-nuevo"><svg
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M4 20h4L19 9l-4-4L4 16z" />
+                                        </svg>Editar</a><button class="boton boton-linea boton-chico" type="button">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                                            <circle cx="12" cy="12" r="3" />
+                                        </svg>Ocultar</button><button class="boton boton-linea boton-chico"
+                                        type="button" aria-label="Eliminar Jornada de Gastronomía">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="miniatura" data-img="ESTUDIO" src="img/img-636b5bfe.gif" alt="" />
+                            </td>
+                            <td>
+                                <strong>Noche de los Museos</strong><br /><span
+                                    style="color: var(--suave); font-size: 14px">Noviembre 2025, 5 fotos</span>
+                            </td>
+                            <td><span class="etiqueta et-naranja">Instagram</span></td>
+                            <td><span class="etiqueta et-gris">Archivado</span></td>
+                            <td>
+                                <div class="acciones-fila">
+                                    <button class="boton boton-linea boton-chico" type="button" data-descargar-evento
+                                        aria-label="Descargar Noche de los Museos">
+                                        Descargar
+                                    </button>
+                                    <a class="boton boton-linea boton-chico" href="#/admin-evento-nuevo"><svg
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M4 20h4L19 9l-4-4L4 16z" />
+                                        </svg>Editar</a><button class="boton boton-linea boton-chico" type="button">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                                            <circle cx="12" cy="12" r="3" />
+                                        </svg>Ocultar</button><button class="boton boton-linea boton-chico"
+                                        type="button" aria-label="Eliminar Noche de los Museos">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="miniatura" data-img="VERDURAS" src="img/img-636b5bfe.gif" alt="" />
+                            </td>
+                            <td>
+                                <strong>Cierre del 1.° cuatrimestre</strong><br /><span
+                                    style="color: var(--suave); font-size: 14px">Julio 2026, 4 fotos</span>
+                            </td>
+                            <td><span class="etiqueta et-gris">Manual</span></td>
+                            <td><span class="etiqueta et-verde">Visible</span></td>
+                            <td>
+                                <div class="acciones-fila">
+                                    <a class="boton boton-linea boton-chico" href="#/admin-evento-nuevo"><svg
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M4 20h4L19 9l-4-4L4 16z" />
+                                        </svg>Editar</a><button class="boton boton-linea boton-chico" type="button">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                                            <circle cx="12" cy="12" r="3" />
+                                        </svg>Ocultar</button><button class="boton boton-linea boton-chico"
+                                        type="button" aria-label="Eliminar Cierre del 1.° cuatrimestre">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <div class="admin" data-pagina="admin-evento-nuevo">
+        <aside class="lateral">
+            <a class="marca" href="#/admin"><img data-img="LOGO" src="img/img-636b5bfe.gif"
+                    alt="Logo del IFTS N.° 2" /><span><strong>IFTS N.° 2</strong><small>Panel de
+                        administración</small></span></a><a class="item" href="#/admin"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+                </svg><span>Inicio</span></a><a class="item actual" href="#/admin-eventos" data-solo-admin><svg
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <circle cx="9" cy="10" r="2" />
+                    <path d="M21 16l-5-5-8 8" />
+                </svg><span>Eventos</span></a><a class="item" href="#/admin-academica"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="17" rx="2" />
+                    <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg><span>Información académica</span></a><a class="item" href="#/admin-contenido"
+                data-solo-admin><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                    <path d="M14 3v6h6M8 13h8M8 17h5" />
+                </svg><span>Contenido institucional</span></a>
+            <a class="item" href="#/admin-usuarios" data-solo-admin><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <circle cx="9" cy="8" r="3.5" />
+                    <path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5c2.2.7 4 2.5 4 5.5" />
+                </svg><span>Usuarios</span></a>
+            <div class="abajo">
+                <a class="item" href="#/inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg><span>Ver el sitio</span></a><a class="item" href="#/login"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                    </svg><span>Cerrar sesión</span></a>
+            </div>
+        </aside>
+        <main class="contenido-admin">
+            <div class="barra-admin">
+                <span class="usuario" data-usuario><span class="avatar">MP</span>Matías Peláez</span>
+            </div>
+            <div class="cab-admin">
+                <div>
+                    <h1>Cargar un evento</h1>
+                    <p>Completá los datos del evento para publicarlo en la galería.</p>
+                </div>
+            </div>
+            <form class="form-admin"
+                onsubmit="event.preventDefault();document.getElementById('ok-evento').classList.add('visible')">
+                <div class="caja">
+                    <div class="campo">
+                        <label for="e-tit">Título del evento</label><input id="e-tit"
+                            value="Jornada de Gastronomía 2026" />
+                    </div>
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="e-fecha">Fecha</label><input id="e-fecha" type="date" value="2026-10-16" />
+                        </div>
+                        <div class="campo">
+                            <label for="e-video">Video (opcional)</label><input id="e-video"
+                                placeholder="Enlace al video en Instagram" /><span class="ayuda">Pegá el enlace a la
+                                publicación de Instagram.</span>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="e-desc">Descripción</label><textarea id="e-desc">
+Jornada abierta con elaboraciones de los estudiantes de los tres años.</textarea>
+                    </div>
+                    <div class="campo">
+                        <span style="font-weight: 700">Fotos</span>
+                        <div class="zona-fotos">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 16V4M7 9l5-5 5 5M4 20h16" />
+                            </svg><strong>Arrastrá las fotos acá o hacé clic para elegirlas</strong><span>Hasta 20 fotos
+                                por evento, en JPG o PNG.</span>
+                        </div>
+                        <div class="previas">
+                            <img data-img="PLATO" src="img/img-636b5bfe.gif" alt="Foto cargada 1" /><img
+                                data-img="VERDURAS" src="img/img-636b5bfe.gif" alt="Foto cargada 2" /><img
+                                data-img="MORRON" src="img/img-636b5bfe.gif" alt="Foto cargada 3" /><img
+                                data-img="ESTUDIO" src="img/img-636b5bfe.gif" alt="Foto cargada 4" />
+                        </div>
+                    </div>
+                </div>
+                <div class="caja">
+                    <h2>Publicación</h2>
+                    <label class="interruptor"><input type="checkbox" checked /> Visible en el sitio</label>
+                    <p style="color: var(--suave); font-size: 15px; margin: 14px 0 20px">
+                        Al terminar el año pasa a "Años anteriores".
+                    </p>
+                    <button class="boton boton-verde" type="submit" style="width: 100%">
+                        Publicar evento</button><a class="boton boton-linea" href="#/admin-eventos"
+                        style="width: 100%; margin-top: 12px">Cancelar</a>
+                    <p class="aviso" id="ok-evento" role="status">Evento publicado en la galería.</p>
+                </div>
+            </form>
+        </main>
+    </div>
+    <div class="admin" data-pagina="admin-academica">
+        <aside class="lateral">
+            <a class="marca" href="#/admin"><img data-img="LOGO" src="img/img-636b5bfe.gif"
+                    alt="Logo del IFTS N.° 2" /><span><strong>IFTS N.° 2</strong><small>Panel de
+                        administración</small></span></a><a class="item" href="#/admin"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+                </svg><span>Inicio</span></a><a class="item" href="#/admin-eventos" data-solo-admin><svg
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <circle cx="9" cy="10" r="2" />
+                    <path d="M21 16l-5-5-8 8" />
+                </svg><span>Eventos</span></a><a class="item actual" href="#/admin-academica"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="17" rx="2" />
+                    <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg><span>Información académica</span></a><a class="item" href="#/admin-contenido"
+                data-solo-admin><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                    <path d="M14 3v6h6M8 13h8M8 17h5" />
+                </svg><span>Contenido institucional</span></a>
+            <a class="item" href="#/admin-usuarios" data-solo-admin><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <circle cx="9" cy="8" r="3.5" />
+                    <path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5c2.2.7 4 2.5 4 5.5" />
+                </svg><span>Usuarios</span></a>
+            <div class="abajo">
+                <a class="item" href="#/inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg><span>Ver el sitio</span></a><a class="item" href="#/login"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                    </svg><span>Cerrar sesión</span></a>
+            </div>
+        </aside>
+        <main class="contenido-admin">
+            <div class="barra-admin">
+                <span class="usuario" data-usuario><span class="avatar">MP</span>Matías Peláez</span>
+            </div>
+            <div class="cab-admin">
+                <div>
+                    <h1>Información académica</h1>
+                    <p>
+                        Horarios, mesas de examen, inscripciones y calendario de ingreso del período vigente.
+                    </p>
+                </div>
+            </div>
+            <div class="form-admin">
+                <form class="caja"
+                    onsubmit="event.preventDefault();document.getElementById('ok-acad').classList.add('visible')">
+                    <h2>Publicar información nueva</h2>
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="a-tipo">Tipo</label><select id="a-tipo">
+                                <option>Horarios de cursada</option>
+                                <option>Mesas de examen</option>
+                                <option>Inscripciones a materias y mesas</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="a-per">Período</label><select id="a-per">
+                                <option>1.° cuatrimestre 2027</option>
+                                <option>2.° cuatrimestre 2026</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <span style="font-weight: 700">Archivo</span>
+                        <div class="zona-fotos">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 16V4M7 9l5-5 5 5M4 20h16" />
+                            </svg><strong>Subí la planilla o el PDF</strong><span>Excel o PDF</span>
+                        </div>
+                    </div>
+                    <button class="boton boton-verde" type="submit">Publicar como vigente</button>
+                    <p class="aviso" id="ok-acad" role="status">
+                        Información publicada. El período anterior pasó al archivo.
+                    </p>
+                </form>
+                <div class="caja">
+                    <h2>Vigente ahora</h2>
+                    <ul class="actividad">
+                        <li>
+                            <span><strong>Horarios</strong><br /><span style="color: var(--suave); font-size: 14px">2.°
+                                    cuatrimestre 2026</span></span><span class="etiqueta et-verde">Vigente</span>
+                        </li>
+                        <li>
+                            <span><strong>Mesas de examen</strong><br /><span
+                                    style="color: var(--suave); font-size: 14px">Turno noviembre-diciembre
+                                    2026</span></span><span class="etiqueta et-verde">Vigente</span>
+                        </li>
+                        <li>
+                            <span><strong>Calendario de ingreso</strong><br /><span
+                                    style="color: var(--suave); font-size: 14px">Ingreso <span
+                                        data-anio="0"></span></span></span><span
+                                class="etiqueta et-verde">Vigente</span>
+                        </li>
+                    </ul>
+                    <h2 style="margin-top: 24px">Archivo</h2>
+                    <ul class="actividad">
+                        <li>
+                            <span>Calendario de ingreso <span data-anio="-1"></span></span><span
+                                class="etiqueta et-gris">Archivado</span>
+                        </li>
+                        <li>
+                            <span>Horarios 1.° cuatrimestre 2026</span><span class="etiqueta et-gris">Archivado</span>
+                        </li>
+                        <li>
+                            <span>Mesas julio-agosto 2026</span><span class="etiqueta et-gris">Archivado</span>
+                        </li>
+                        <li>
+                            <span>Horarios 2.° cuatrimestre 2025</span><span class="etiqueta et-gris">Archivado</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <form class="caja calendario"
+                onsubmit="event.preventDefault();document.getElementById('ok-cal').classList.add('visible')">
+                <h2>Calendario de ingreso</h2>
+                <div class="fila">
+                    <div class="campo">
+                        <label for="c-ciclo">Ciclo lectivo</label><input id="c-ciclo" data-anio-valor="0" /><span
+                            class="ayuda">Se completa con el año del próximo ingreso.</span>
+                    </div>
+                    <div class="campo">
+                        <label for="c-fuente">Fuente de las fechas</label><input id="c-fuente"
+                            value="Agencia de Habilidades para el Futuro" />
+                    </div>
+                </div>
+                <div class="tabla-caja">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Etapa</th>
+                                <th>Desde</th>
+                                <th>Hasta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Preinscripción</td>
+                                <td><input value="6/11" aria-label="Desde" /></td>
+                                <td><input value="5/3" aria-label="Hasta" /></td>
+                            </tr>
+                            <tr>
+                                <td>Curso de preparación</td>
+                                <td><input value="6/11" aria-label="Desde" /></td>
+                                <td><input value="7/3" aria-label="Hasta" /></td>
+                            </tr>
+                            <tr>
+                                <td>Exámenes obligatorios</td>
+                                <td><input value="3/2" aria-label="Desde" /></td>
+                                <td><input value="7/3" aria-label="Hasta" /></td>
+                            </tr>
+                            <tr>
+                                <td>Confirmación de vacante</td>
+                                <td><input value="12/3" aria-label="Desde" /></td>
+                                <td><input value="" aria-label="Hasta" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="acciones">
+                    <button class="boton boton-verde" type="submit">Publicar calendario</button>
+                </div>
+                <p class="aviso" id="ok-cal" role="status">
+                    Calendario publicado. El del año anterior pasó al archivo.
+                </p>
+            </form>
+        </main>
+    </div>
+    <div class="admin" data-pagina="admin-contenido">
+        <aside class="lateral">
+            <a class="marca" href="#/admin"><img data-img="LOGO" src="img/img-636b5bfe.gif"
+                    alt="Logo del IFTS N.° 2" /><span><strong>IFTS N.° 2</strong><small>Panel de
+                        administración</small></span></a><a class="item" href="#/admin"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+                </svg><span>Inicio</span></a><a class="item" href="#/admin-eventos" data-solo-admin><svg
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <circle cx="9" cy="10" r="2" />
+                    <path d="M21 16l-5-5-8 8" />
+                </svg><span>Eventos</span></a><a class="item" href="#/admin-academica"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="17" rx="2" />
+                    <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg><span>Información académica</span></a><a class="item actual" href="#/admin-contenido"
+                data-solo-admin><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                    <path d="M14 3v6h6M8 13h8M8 17h5" />
+                </svg><span>Contenido institucional</span></a>
+            <a class="item" href="#/admin-usuarios" data-solo-admin><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <circle cx="9" cy="8" r="3.5" />
+                    <path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5c2.2.7 4 2.5 4 5.5" />
+                </svg><span>Usuarios</span></a>
+            <div class="abajo">
+                <a class="item" href="#/inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg><span>Ver el sitio</span></a><a class="item" href="#/login"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                    </svg><span>Cerrar sesión</span></a>
+            </div>
+        </aside>
+        <main class="contenido-admin">
+            <div class="barra-admin">
+                <span class="usuario" data-usuario><span class="avatar">MP</span>Matías Peláez</span>
+            </div>
+            <div class="cab-admin">
+                <div>
+                    <h1>Contenido institucional</h1>
+                    <p>Carrera, plan de estudios, autoridades, datos de contacto y enlaces útiles.</p>
+                </div>
+            </div>
+            <div class="form-admin form-contenido">
+                <ul class="secciones-lista">
+                    <li>
+                        <button type="button" aria-pressed="false">
+                            <span><strong>Perfil del egresado</strong><small>Actualizado el 2 de
+                                    agosto</small></span><span class="flecha"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" />
+                                </svg></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" aria-pressed="false">
+                            <span><strong>Plan de estudios</strong><small>Actualizado en marzo</small></span><span
+                                class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" />
+                                </svg></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" aria-pressed="false">
+                            <span><strong>Correlatividades</strong><small>Actualizado en marzo</small></span><span
+                                class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" />
+                                </svg></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" aria-pressed="true">
+                            <span><strong>Autoridades</strong><small>Actualizado el 2 de agosto</small></span><span
+                                class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" />
+                                </svg></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" aria-pressed="false">
+                            <span><strong>Tutoría</strong><small>Actualizado en abril</small></span><span
+                                class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" />
+                                </svg></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" aria-pressed="false" data-panel="ingreso">
+                            <span><strong>Ingreso y preingreso</strong><small>Actualizado en marzo</small></span><span
+                                class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" />
+                                </svg></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" aria-pressed="false">
+                            <span><strong>Datos de contacto</strong><small>Actualizado en marzo</small></span><span
+                                class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" />
+                                </svg></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" aria-pressed="false">
+                            <span><strong>Enlaces útiles</strong><small>Actualizado en marzo</small></span><span
+                                class="flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" />
+                                </svg></span>
+                        </button>
+                    </li>
+                </ul>
+                <form class="caja panel-cont" data-panel="autoridades"
+                    onsubmit="event.preventDefault();document.getElementById('ok-cont').classList.add('visible')">
+                    <h2>Autoridades</h2>
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="s-n1">Nombre</label><input id="s-n1" value="Cecilia C. Dipiazza" />
+                        </div>
+                        <div class="campo">
+                            <label for="s-c1">Cargo</label><input id="s-c1" value="Rectora" />
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="s-n2">Nombre</label><input id="s-n2" value="Prof. Julia Sboro" />
+                        </div>
+                        <div class="campo">
+                            <label for="s-c2">Cargo</label><input id="s-c2" value="Tutora institucional" />
+                        </div>
+                    </div>
+                    <button class="boton boton-linea boton-chico" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 5v14M5 12h14" />
+                        </svg>Agregar persona
+                    </button>
+                    <div class="acciones">
+                        <button class="boton boton-verde" type="submit">Guardar cambios</button><a class="enlace"
+                            href="#/carrera">Ver cómo queda en el sitio</a>
+                    </div>
+                    <p class="aviso" id="ok-cont" role="status">Cambios guardados.</p>
+                </form>
+                <form class="caja panel-cont" data-panel="ingreso" hidden
+                    onsubmit="event.preventDefault();document.getElementById('ok-ing').classList.add('visible')">
+                    <h2>Ingreso y preingreso</h2>
+                    <div class="campo">
+                        <label for="g-req">Requisito de ingreso</label><input id="g-req" value="Secundario completo" />
+                    </div>
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="g-pre">Enlace a la preinscripción</label><input id="g-pre"
+                                value="guarani-autogestionagencia.bue.edu.ar/preinscripcion" />
+                        </div>
+                        <div class="campo">
+                            <label for="g-mail">Correo de consultas del preingreso</label><input id="g-mail"
+                                value="preingreso.ifts@bue.edu.ar" />
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <span style="font-weight: 700">Material de preingreso</span>
+                        <div class="archivo-actual">
+                            <strong>Guía de preingreso a Técnica Superior</strong><span>PDF, 6 páginas</span>
+                        </div>
+                        <div class="zona-fotos">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 16V4M7 9l5-5 5 5M4 20h16" />
+                            </svg><strong>Subí la guía nueva en PDF</strong><span>Si la recibís en PowerPoint, exportala
+                                como PDF.</span>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="g-faq">Preguntas frecuentes</label><textarea id="g-faq">
+¿Qué necesito para inscribirme?
+¿Puedo anotarme en más de una carrera?
+¿Cómo entro al curso de preparación?
+¿Qué se evalúa en los exámenes?
+¿Cómo se asignan las vacantes?</textarea><span class="ayuda">Una pregunta por línea. Las respuestas se editan al abrir
+                            cada una.</span>
+                    </div>
+                    <div class="acciones">
+                        <button class="boton boton-verde" type="submit">Guardar cambios</button><a class="enlace"
+                            href="#/ingreso">Ver cómo queda en el sitio</a>
+                    </div>
+                    <p class="aviso" id="ok-ing" role="status">Cambios guardados.</p>
+                </form>
+            </div>
+        </main>
+    </div>
+    <div class="admin" data-pagina="admin-usuarios">
+        <aside class="lateral">
+            <a class="marca" href="#/admin"><img data-img="LOGO" src="img/img-636b5bfe.gif"
+                    alt="Logo del IFTS N.° 2" /><span><strong>IFTS N.° 2</strong><small>Panel de
+                        administración</small></span></a><a class="item" href="#/admin"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+                </svg><span>Inicio</span></a><a class="item" href="#/admin-eventos" data-solo-admin><svg
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <circle cx="9" cy="10" r="2" />
+                    <path d="M21 16l-5-5-8 8" />
+                </svg><span>Eventos</span></a><a class="item" href="#/admin-academica"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="17" rx="2" />
+                    <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg><span>Información académica</span></a><a class="item" href="#/admin-contenido"
+                data-solo-admin><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                    <path d="M14 3v6h6M8 13h8M8 17h5" />
+                </svg><span>Contenido institucional</span></a>
+            <a class="item actual" href="#/admin-usuarios" data-solo-admin><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <circle cx="9" cy="8" r="3.5" />
+                    <path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5c2.2.7 4 2.5 4 5.5" />
+                </svg><span>Usuarios</span></a>
+            <div class="abajo">
+                <a class="item" href="#/inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg><span>Ver el sitio</span></a><a class="item" href="#/login"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                    </svg><span>Cerrar sesión</span></a>
+            </div>
+        </aside>
+        <main class="contenido-admin">
+            <div class="barra-admin">
+                <span class="usuario" data-usuario><span class="avatar">MP</span>Matías Peláez</span>
+            </div>
+            <div class="cab-admin">
+                <div>
+                    <h1>Usuarios</h1>
+                    <p>
+                        Quién puede entrar al panel y qué puede hacer. Quien administra registra a cada
+                        persona y le asigna su rol.
+                    </p>
+                </div>
+            </div>
+            <div class="caja" style="margin-bottom: 24px">
+                <h2>Roles</h2>
+                <ul class="actividad">
+                    <li>
+                        <span><strong>Administrador</strong>: acceso total (eventos, información académica,
+                            contenido institucional y usuarios).</span>
+                    </li>
+                    <li>
+                        <span><strong>Bedelía</strong>: solo información académica (horarios, mesas de examen,
+                            ingresantes y alumnos en curso).</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="caja" style="margin-bottom: 24px">
+                <h2>Agregar un usuario</h2>
+                <form id="form-usuario" novalidate>
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="u-nombre">Nombre y apellido</label><input id="u-nombre" autocomplete="off" />
+                        </div>
+                        <div class="campo">
+                            <label for="u-mail">Correo electrónico</label><input id="u-mail" type="email"
+                                autocomplete="off" />
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="u-rol">Rol</label><select id="u-rol">
+                                <option value="Administrador">Administrador</option>
+                                <option value="Bedelía">Bedelía</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="u-pass">Contraseña inicial</label><input id="u-pass" type="password"
+                                autocomplete="new-password" />
+                        </div>
+                    </div>
+                    <p style="color: var(--suave); font-size: 14px">
+                        La contraseña debe tener al menos 8 caracteres, con letras y números.
+                    </p>
+                    <p class="aviso" id="error-usuario" role="alert"></p>
+                    <button class="boton boton-verde" type="submit">Agregar usuario</button>
+                    <p class="aviso" id="ok-usuario" role="status">
+                        Usuario agregado. Al iniciar sesión va a ver solo las secciones de su rol.
+                    </p>
+                </form>
+            </div>
+            <div class="tabla-caja">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-usuarios">
+                        <tr>
+                            <td><strong>Matías Peláez</strong></td>
+                            <td>matias.pelaez@ifts2.edu.ar</td>
+                            <td><span class="etiqueta et-verde">Administrador</span></td>
+                            <td>
+                                <div class="acciones-fila">
+                                    <button class="boton boton-linea boton-chico" type="button" data-quitar-usuario>
+                                        Eliminar
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="color: var(--suave); font-size: 14px; margin-top: 12px">
+                Los datos de las cuentas (tres con acceso total y dos de Bedelía) los completa el
+                instituto; esta lista es de ejemplo.
+            </p>
+        </main>
+    </div>
+    <script src="js/imagenes.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
